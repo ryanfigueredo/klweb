@@ -630,7 +630,7 @@ const LandingPage: React.FC = () => {
               />
             </motion.div>
           </div>
-          <div className="flex gap-12 justify-center">
+          <div className="flex gap-2 justify-center">
             <motion.div
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
@@ -677,6 +677,18 @@ const LandingPage: React.FC = () => {
               <Image
                 className="rounded"
                 src="/images/partners/16.jpg"
+                alt="Logo 3"
+                width={200}
+                height={100}
+              />
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <Image
+                className="rounded"
+                src="/images/partners/17.jpg"
                 alt="Logo 3"
                 width={200}
                 height={100}
