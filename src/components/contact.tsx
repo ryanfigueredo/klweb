@@ -2,6 +2,7 @@ import Link from "next/link";
 import HubSpotForm from "./formhubtrabalhe";
 import Image from "next/image";
 import HubSpotFormTrabalhe from "./formhub";
+import FormNext from "./formNext";
 
 const FormComponent = () => {
   return (
@@ -15,7 +16,7 @@ const FormComponent = () => {
 
       <main className="flex text-lg flex-col md:flex-row justify-center content-center items-center md:gap-4 gap-2">
         <section className="flex md:w-1/3 flex-col g-12">
-          <HubSpotFormTrabalhe />
+          <FormNext />
         </section>
 
         <hr className="w-0.5 h-96 bg-gray-400 border-none m-8 hidden md:block" />
