@@ -153,10 +153,10 @@ const Footer = () => {
         <br />
         <br />
         <a
-          href="https://ryanfigueredo.com/"
+          href="https://www.dmtn.com.br/"
           className="text-sm hover:text-slate-400 font-normal transition duration-150 ease-in-out p-2"
         >
-          Desenvolvido por Ryan Figueredo
+          Desenvolvido por DMTN Sistemas
         </a>
       </div>
     </footer>
