@@ -227,7 +227,9 @@ const LandingPage: React.FC = () => {
       >
         <AboutSection />
       </motion.section>
+
       <hr className="w-1/2 h-0.5 bg-gray-300 border-none m-2 hidden md:block" />
+
       <motion.section
         className="w-full px-6  md:px-0 md:pl-24 py-20 mt-4"
         initial={{ opacity: 0, y: 50 }}
@@ -245,7 +247,9 @@ const LandingPage: React.FC = () => {
           <ImageComparisonTree />
         </div>
       </motion.section>
+
       <hr className="w-1/2 h-0.5 bg-gray-300 border-none m-2 hidden md:block" />
+
       <motion.section
         id="partner"
         className="w-full px-6 md:px-0 md:pl-24 py-20 mt-4"
@@ -493,6 +497,7 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
       </motion.section>
+
       <hr className="w-1/2 h-0.5 bg-gray-300 border-none m-2 hidden md:block" />
 
       <motion.section
@@ -512,6 +517,8 @@ const LandingPage: React.FC = () => {
           <Gallery />
         </div>
       </motion.section>
+
+      <hr className="w-1/2 h-0.5 bg-gray-300 border-none m-2 hidden md:block" />
 
       <motion.section
         id="contact"
