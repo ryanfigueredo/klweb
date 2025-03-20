@@ -10,7 +10,7 @@ const BannerInitial: React.FC = () => {
   };
   return (
     <div
-      className="w-full h-screen flex items-center bg-cover bg-center"
+      className="w-full h-[740px] flex items-center bg-cover bg-center"
       id="start"
       style={{ backgroundImage: "url(/images/BannerMain.png)" }}
     >

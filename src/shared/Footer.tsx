@@ -89,7 +89,7 @@ const Footer = () => {
 
             <div className="flex py-2">
               <Link
-                href="https://api.whatsapp.com/send/?phone=5541984713006&text&type=phone_number&app_absent=0"
+                href="https://api.whatsapp.com/send/?phone=5541984022907&text&type=phone_number&app_absent=0"
                 className="hover:scale-125 transition duration-50 ease-in-out p-2"
                 passHref
                 target="_blank"

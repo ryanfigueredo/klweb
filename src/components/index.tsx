@@ -10,6 +10,8 @@ import ImageComparison from "./ImageComparison";
 import ImageComparisonTwo from "./ImageComparisonTwo";
 import ImageComparisonTree from "./ImageComparisonTree";
 import BannerInitial from "./bannerInitial";
+import Gallery from "./gallery";
+import AboutSection from "./aboutsection";
 
 const LandingPage: React.FC = () => {
   const handleSmoothScroll = (e: MouseEvent<HTMLAnchorElement>, id: string) => {
@@ -211,8 +213,10 @@ const LandingPage: React.FC = () => {
           </div>
         </section>
       </section>
+
       <motion.section
-        className="w-full px-6 md:px-0 md:pl-24 py-20 mt-4"
+        id="about"
+        className="w-full px-6 md:px-0 md:pl-24 py-20 mt-4 flex flex-col md:flex-row"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{
           opacity: 1,
@@ -220,83 +224,7 @@ const LandingPage: React.FC = () => {
           transition: { delay: 0, duration: 0.5 },
         }}
       >
-        <div className="text-2xl md:text-4xl font-bold text-[#667a1d] mb-12 md:ml-[95px]">
-          <h1>
-            Seriedade e Confiança <br />
-            para o Cliente{" "}
-          </h1>
-        </div>
-
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-4">
-          <div>
-            <motion.div
-              className="rounded text-white flex items-end justify-start"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-                transition: { delay: 0.2, duration: 0.5 },
-              }}
-              viewport={{ once: false, amount: 1 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 50 }}
-            >
-              <Image
-                className="imageBox"
-                src="/images/Rectangle77.png"
-                alt="Abrangência Nacional"
-                width={409}
-                height={650}
-              />
-            </motion.div>
-          </div>
-
-          <div>
-            <motion.div
-              className="rounded text-white flex items-end justify-start"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-                transition: { delay: 0.2, duration: 0.5 },
-              }}
-              viewport={{ once: false, amount: 1 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 50 }}
-            >
-              <Image
-                className="imageBox"
-                src="/images/Rectangle76.png"
-                alt="Abrangência Nacional"
-                width={409}
-                height={650}
-              />
-            </motion.div>
-          </div>
-
-          <div>
-            <motion.div
-              className="rounded text-white flex items-end justify-start"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-                transition: { delay: 0.2, duration: 0.5 },
-              }}
-              viewport={{ once: false, amount: 1 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 50 }}
-            >
-              <Image
-                className="imageBox"
-                src="/images/Rectangle78.png"
-                alt="Abrangência Nacional"
-                width={409}
-                height={650}
-              />
-            </motion.div>
-          </div>
-        </div>
+        <AboutSection />
       </motion.section>
       <hr className="w-1/2 h-0.5 bg-gray-300 border-none m-2 hidden md:block" />
       <motion.section
@@ -308,145 +236,12 @@ const LandingPage: React.FC = () => {
           transition: { delay: 0, duration: 0.5 },
         }}
       >
-        <div className="text-2xl md:text-4xl font-bold text-[#667a1d] mb-12 md:ml-[95px]">
-          <h1>
-            Tratamento <br />
-            de Pisos
-          </h1>
-          <h2 className="text-md md:text-base font-normal text-[#667a1d]">
-            Arraste para o lado e veja o antes e depois
-          </h2>
-        </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-2">
           <ImageComparison />
           <br />
           <ImageComparisonTwo />
           <br />
           <ImageComparisonTree />
-        </div>
-
-        {/* <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-4">
-        <div>                
-          <motion.div className="rounded text-white flex items-end justify-start" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2 , duration: 0.5 } }} viewport={{ once: false, amount: 1 }} animate={ { opacity: 1, y: 0 }} exit={{ opacity: 0, y: 50 }}>
-            <Image
-                  className="imageBox"
-                  src="/images/1.png"
-                  alt="Abrangência Nacional"
-                  width={300}
-                  height={700}
-                />
-          </motion.div>
-        </div>
-        
-        <div>
-          <motion.div
-          className="rounded text-white flex items-end justify-start"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2 , duration: 0.5 } }}
-          viewport={{ once: false, amount: 1 }}
-          animate={ { opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 50 }}
-          >
-            <Image
-                  className="imageBox"
-                  src="/images/2.png"
-                  alt="Abrangência Nacional"
-                  width={300}
-                  height={700}
-                />
-          </motion.div>
-        </div>
-
-        <div>
-          <motion.div
-          className="rounded text-white flex items-end justify-start"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2 , duration: 0.5 } }}
-          viewport={{ once: false, amount: 1 }}
-          animate={ { opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 50 }}
-          >
-           <Image
-            className="imageBox"
-            src="/images/3.png"
-            alt="Abrangência Nacional"
-            width={300}
-            height={700}
-           />
-          </motion.div>
-        </div>
-
-        <div>
-          <motion.div
-          className="rounded text-white flex items-end justify-start"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2 , duration: 0.5 } }}
-          viewport={{ once: false, amount: 1 }}
-          animate={ { opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 50 }}
-          >
-           <Image
-                  className="imageBox"
-                  src="/images/4.png"
-                  alt="Abrangência Nacional"
-                  width={300}
-                  height={700}
-                />
-          </motion.div>
-        </div>
-        </div> */}
-      </motion.section>
-      <hr className="w-1/2 h-0.5 bg-gray-300 border-none m-2 hidden md:block" />
-      <motion.section
-        id="about"
-        className="w-full px-6 md:px-0 md:pl-24 py-20 mt-4 flex flex-col md:flex-row"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-          transition: { delay: 0, duration: 0.5 },
-        }}
-      >
-        <div className="text-[#667a1d] mb-12 md:ml-[95px] w-full md:w-2/4">
-          <h1 className="text-2xl md:text-4xl font-bold">
-            Sobre a KL Facilities
-          </h1>{" "}
-          <br />
-          <p className="text-lg md:text-xl text-[#464646] font-normal text-justify">
-            Somos uma empresa em constante expansão, comprometidos com as
-            políticas de sustentabilidade e com a excelência da qualidade nos
-            serviços prestados a nossos clientes. Em nosso portfólio atuamos nos
-            principais ramos da terceirização de serviços, contamos com uma
-            equipe de colaboradores capacitados e treinados para melhor atender
-            aos nossos clientes. Nosso modelo de trabalho consiste em elaborar
-            uma proposta personalizada para cada tipo de serviço, entregando
-            assim uma experiência completa e satisfatória para os nossos
-            clientes. O nosso foco é a redução de custos, otimização do tempo e
-            aumento da produtividade.
-          </p>
-        </div>
-
-        <div className="flex flex-col md:flex-row justify-center  items-center gap-8 md:gap-4 w-full md:w-2/4">
-          <motion.div
-            className="rounded text-white m-3"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: { delay: 0.2, duration: 0.5 },
-            }}
-            viewport={{ once: false, amount: 1 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 50 }}
-          >
-            <Image
-              src="/images/professional.jpg"
-              alt="Profissional da KL Facilities"
-              width={650}
-              height={650}
-              className="rounded-lg shadow-md hover:scale-105 transition ease-in-out"
-            />
-          </motion.div>
         </div>
       </motion.section>
       <hr className="w-1/2 h-0.5 bg-gray-300 border-none m-2 hidden md:block" />
@@ -465,8 +260,8 @@ const LandingPage: React.FC = () => {
       >
         <div className="text-2xl md:text-4xl font-bold text-[#667a1d] mb-12 md:ml-[95px]">
           <h1>
-            Empresas que confiam <br />
-            em nosso trabalho
+            Parceiros que confiam <br />
+            na KL Facilities
           </h1>
         </div>
 
@@ -698,6 +493,25 @@ const LandingPage: React.FC = () => {
         </div>
       </motion.section>
       <hr className="w-1/2 h-0.5 bg-gray-300 border-none m-2 hidden md:block" />
+
+      <motion.section
+        id=""
+        className="w-full px-6 md:px-0 md:pl-24 py-20 mt-4"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: { delay: 0.2, duration: 0.5 },
+        }}
+        viewport={{ once: false, amount: 1 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 50 }}
+      >
+        <div className="text-2xl md:text-4xl font-bold text-[#667a1d] mb-12 md:ml-[95px]">
+          <Gallery />
+        </div>
+      </motion.section>
+
       <motion.section
         id="contact"
         className="w-full"
@@ -738,8 +552,8 @@ const LandingPage: React.FC = () => {
                   <h1 className="text-md md:text-2xl font-bold text-[#667a1d]">
                     Telefone
                   </h1>
-                  <Link className="text-gray-600" href="tel:41984713006">
-                    +55 41 98471-3006
+                  <Link className="text-gray-600" href="tel:5541984022907">
+                    +55 41 98402-2907
                   </Link>
                 </div>
               </div>
@@ -757,7 +571,7 @@ const LandingPage: React.FC = () => {
                   </h1>
                   <Link
                     className="text-gray-600"
-                    href="https://wa.me/5541984713006"
+                    href="https://wa.me/5541984022907"
                   >
                     Clique para entrar em contato
                   </Link>
