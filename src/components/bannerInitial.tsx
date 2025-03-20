@@ -22,7 +22,7 @@ const BannerInitial: React.FC = () => {
         transition={{ duration: 0.4 }}
       >
         <motion.h1
-          className="text-3xl md:text-5xl font-bold leading-tight"
+          className="text-3xl md:text-6xl leading-tight"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{
             opacity: 1,
@@ -34,9 +34,8 @@ const BannerInitial: React.FC = () => {
           KL FACILITIES
         </motion.h1>
         <h1 className="mt-4 text-2xl md:text-4xl">
-          Excelência em <br />
-          Tratamento de <br />
-          Pisos e Limpeza
+          A empresa de facilities <br />
+          que mais cresce no Brasil
         </h1>
         <Link
           href="#contact"

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Rasa } from "next/font/google";
 import "./styles.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const rasa = Rasa({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "KL Facilties",
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={rasa.className}>{children}</body>
     </html>
   );
 }
