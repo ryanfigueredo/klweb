@@ -73,9 +73,9 @@ const FormComponent = () => {
               </h1>
               <a
                 className="text-gray-600"
-                href="mailto:contato@klfacilities.com.br"
+                href="mailto:helton.supervisor@klholding.com.br"
               >
-                contato@klfacilities.com.br
+                helton.supervisor@klholding.com.br
               </a>
             </div>
           </div>

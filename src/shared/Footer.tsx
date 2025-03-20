@@ -79,7 +79,7 @@ const Footer = () => {
             <h4 className="font-bold">Social</h4>
             <hr className="py-2" />
             <li className="hover:text-gray-400 transition duration-150 ease-in-out">
-              contato@klfacilities.com.br
+              helton.supervisor@klholding.com.br
             </li>
             <li className="hover:text-gray-400 transition duration-150 ease-in-out">
               +55 41 98402-2907
