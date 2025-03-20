@@ -25,7 +25,7 @@ const LandingPage: React.FC = () => {
       <Link
         href={"https://wa.me/5541984022907"}
         target="_blank"
-        className="fixed bottom-5 right-5 flex items-center justify-center bg-green-400 hover:bg-green-600 w-16 h-16 rounded-full shadow-md z-50 transition-colors duration-300"
+        className="fixed bottom-5 right-5 flex items-center justify-center bg-green-400 hover:bg-green-600 w-16 h-16 rounded-full shadow-md z-50 transition-colors duration-300 hidden md:flex"
       >
         <Image
           className="px-2"
