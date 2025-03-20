@@ -5,7 +5,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import React, { MouseEvent } from "react";
 import { smoothScrollTo } from "../utils/smoothScroll";
-import HubSpotForm from "./formhub";
 import ImageComparison from "./ImageComparison";
 import ImageComparisonTwo from "./ImageComparisonTwo";
 import ImageComparisonTree from "./ImageComparisonTree";
@@ -24,7 +23,7 @@ const LandingPage: React.FC = () => {
     <div className="bg-[#FBFFF9] flex flex-col items-center justify-between min-h-screen start-0">
       <BannerInitial />
       <Link
-        href={"https://wa.me/5541984713006"}
+        href={"https://wa.me/5541984022907"}
         target="_blank"
         className="fixed bottom-5 right-5 flex items-center justify-center bg-green-400 hover:bg-green-600 w-16 h-16 rounded-full shadow-md z-50 transition-colors duration-300"
       >

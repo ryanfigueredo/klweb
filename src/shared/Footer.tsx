@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#292B74] h-auto p-10 absolute md:w-full ">
+    <footer className="bg-[#292B74] h-auto pt-5 px-40 absolute md:w-full ">
       <div className="text-gray-300  flex flex-col md:flex-row items-start justify-between">
         <div>
           <Image
@@ -20,10 +20,8 @@ const Footer = () => {
             }}
           />
           <p className="text-sm text-justify pt-2">
-            Fornecer soluções em terceirização
-            <br />
-            de serviços que contribuam para o <br />
-            sucesso dos nossos clientes.
+            A empresa de facilities <br />
+            que mais cresce no Brasil.
           </p>
         </div>
 

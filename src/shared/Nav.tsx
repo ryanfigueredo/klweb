@@ -61,6 +61,14 @@ const Nav: React.FC = () => {
             >
               Parceiros
             </Link>
+            <Link
+              href="#photos"
+              className="p-2"
+              passHref
+              onClick={(e) => handleSmoothScroll(e, "photo")}
+            >
+              Cases de Sucesso
+            </Link>
           </div>
         </div>
 
@@ -111,6 +119,14 @@ const Nav: React.FC = () => {
                 onClick={(e) => handleSmoothScroll(e, "partner")}
               >
                 Parceiros
+              </Link>
+              <Link
+                href="#photos"
+                className="p-2 block"
+                passHref
+                onClick={(e) => handleSmoothScroll(e, "photos")}
+              >
+                Cases de Sucesso
               </Link>
               <Link
                 href="https://wa.me/5541984022907"
