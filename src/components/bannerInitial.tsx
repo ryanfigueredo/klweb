@@ -38,9 +38,9 @@ const BannerInitial: React.FC = () => {
           que mais cresce no Brasil
         </h1>
         <Link
-          href="#contact"
+          href="#photo"
           passHref
-          onClick={(e) => handleSmoothScroll(e, "contact")}
+          onClick={(e) => handleSmoothScroll(e, "photo")}
         >
           <button className="mt-8 bg-[#779220] text-white py-4 px-8 rounded hover:bg-[#667a1d] transition duration-300">
             CONHEÇA NOSSO TRABALHO
