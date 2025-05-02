@@ -7,10 +7,14 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-
 .noselect {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }

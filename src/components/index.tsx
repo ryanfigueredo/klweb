@@ -20,7 +20,7 @@ const LandingPage: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#FBFFF9] flex flex-col items-center justify-between min-h-screen start-0">
+    <div className="bg-[#FBFFF9] flex flex-col items-center justify-between min-h-screen w-full overflow-x-hidden">
       <BannerInitial />
       <Link
         href={"https://wa.me/5541984022907"}
@@ -114,7 +114,7 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
       </motion.section>
-      <section className="bg-[#292B74] w-full md:px-0 md:pl-24 py-20 mt-4">
+      <section className="bg-[#292B74] w-full px-6 md:px-24 py-20 mt-4">
         <section className="w-full px-6 md:px-0 md:pl-24 py-20 mt-4">
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-4">
             <motion.div

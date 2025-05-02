@@ -8,6 +8,7 @@ const rasa = Rasa({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "KL Facilties",
   description: "Consultoria e Terceirização Offshoring",
+  viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({
